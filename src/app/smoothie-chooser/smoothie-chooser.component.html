@@ -1,0 +1,11 @@
+<!--<div id="stylo"></div>-->
+
+<article>
+
+	<h4 *ngFor="let s of smoothies" (click)="addToPanier(s)">{{s.name}} {{s.price}}</h4>
+
+	<h4 (click)="customSmoothie=true">Make your own Smoothie</h4>
+
+</article>
+
+<app-custom-smoothie-maker *ngIf="customSmoothie" (close)="closeCustomChooser()"></app-custom-smoothie-maker>

@@ -1,0 +1,41 @@
+nav {
+	margin-bottom: 0px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+main {
+	width: 90%;
+	margin: auto;
+}
+
+router-outlet + * {
+	width: 100%;
+}
+
+.flex-parent {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.flex-parent > * {
+	border: 3px solid black;
+}
+
+.flex-parent > div:first-child {
+	width: 40%;
+}
+
+header {
+	text-align: center;
+	background-color: yellowgreen;
+	margin-bottom: 40px;
+	padding: 35px 0px;
+}
+
+header h1 {
+	color: lemonchiffon;
+	font-size: 40px;
+}

@@ -1,0 +1,13 @@
+#stylo {
+	width: 100px;
+	height: 20px;
+	background-color: hotpink;
+	clip-path: polygon(0 100%, 20% 0, 80% 0, 100% 100%);
+}
+
+
+
+:host {
+	padding: 15px 30px;
+	font-family: Cambria;
+}

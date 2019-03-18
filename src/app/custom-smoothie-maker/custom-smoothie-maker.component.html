@@ -1,0 +1,11 @@
+
+<form action="#" ngNativeValidate (ngSubmit)="makeCustomSmoothie()">
+
+	<ng-template ngFor let-f let-i="index" [ngForOf]="fruits">
+		<input id="custom-smoothie-maker-{{f}}" name="chosenFruits" [(ngModel)]="chosenFruits[i]" type="checkbox" [value]="f">
+		<label for="custom-smoothie-maker-{{f}}">{{f}}</label>
+		<br>
+	</ng-template>
+
+	<button type="submit">Make your own Smoothie</button>
+</form>

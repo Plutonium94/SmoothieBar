@@ -1,0 +1,18 @@
+<table *ngIf="products.length">
+	<caption>Shopping Cart</caption>
+	<tbody>
+		<tr *ngFor="let p of products; index as i">
+			<td>{{p.name}}</td>
+			<td>{{p.price}}</td>
+			<td><button type="button" (click)="removeFromProducts(i)">Remove</button></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>Total Amount</td>
+			<td colspan="2">{{total | currency }}</td>
+			<td><button type="button" (click)="pay()">Pay</button></td>
+		</tr>
+	</tfoot>
+</table>
+

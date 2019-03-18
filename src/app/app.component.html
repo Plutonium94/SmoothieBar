@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+	<h1>
+		Welcome to {{ title }}!
+	</h1>
+</header>
+
+<main>
+	<div class="flex-parent">
+		<div>
+			<nav>
+				<a routerLink="/smoothie" routerLinkActive="active">Smoothie</a>&nbsp; 
+				<a routerLink="/cart">Shopping Cart</a>
+			</nav>
+				
+
+			<router-outlet></router-outlet>
+		</div>
+
+		<app-cart></app-cart>
+
+		<app-review></app-review>
+	</div>
+</main>

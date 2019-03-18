@@ -1,0 +1,10 @@
+form {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 15px 30px;
+}
+
+form input[type="checkbox"] {
+	margin-right: 7px ;
+}
+
