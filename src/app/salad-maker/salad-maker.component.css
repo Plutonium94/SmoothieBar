@@ -1,0 +1,21 @@
+form {
+	padding: 40px;
+}
+
+input[type="checkbox"] {
+	margin-right: 24px;
+}
+
+
+
+select {
+	margin-bottom: 10px;
+}
+
+label, select, button {
+	font-size: 20px;
+}
+
+label:not(.checkboxLabel) {
+	margin-right: 24px;
+}

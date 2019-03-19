@@ -11,13 +11,15 @@ import { CartComponent } from './cart/cart.component';
 import { SmoothieChooserComponent } from './smoothie-chooser/smoothie-chooser.component';
 import { ReviewComponent } from './review/review.component';
 import { SaladChooserComponent } from './salad-chooser/salad-chooser.component';
+import { SaladMakerComponent } from './salad-maker/salad-maker.component';
 
 const appRoutes :Routes = [
     { path: '', redirectTo: 'smoothie', pathMatch: 'full' },
     { path: 'review', component: ReviewComponent},
     { path: 'smoothie', component: SmoothieChooserComponent},
     { path: 'cart', component: CartComponent },
-
+    { path: 'salad', component: SaladChooserComponent },
+    { path: 'make-salad', component: SaladMakerComponent }
 
 ];
 
@@ -28,7 +30,8 @@ const appRoutes :Routes = [
 		CartComponent,
 		SmoothieChooserComponent,
 		ReviewComponent,
-		SaladChooserComponent
+		SaladChooserComponent,
+		SaladMakerComponent
 	],
 	imports: [
 		BrowserModule,

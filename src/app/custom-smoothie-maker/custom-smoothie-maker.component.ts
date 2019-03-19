@@ -30,6 +30,7 @@ export class CustomSmoothieMakerComponent implements OnInit {
 		for(let i = 0; i < this.chosenFruits.length; i++) {
 			if(this.chosenFruits[i]) { fruitsChosen.push(this.fruits[i]);}
 		}
+		if(!fruitsChosen.length) { return ; }
 		let prix = this.chosenFruits.length * 5;
 		this.cartService.add({name:"Custom made smoothie with " + fruitsChosen, price: prix});
 		this.closef.emit(true);
