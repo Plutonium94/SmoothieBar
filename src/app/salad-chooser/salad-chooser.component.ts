@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
+import { SaladMakerComponent } from '../salad-maker/salad-maker.component';
 import { Salad } from '../salad';
 
 @Component({

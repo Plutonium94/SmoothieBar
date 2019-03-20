@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { SaladChooserComponent } from './salad-chooser.component';
+import { SaladMakerComponent } from '../salad-maker/salad-maker.component';
 
 describe('SaladChooserComponent', () => {
   let component: SaladChooserComponent;
@@ -8,7 +11,8 @@ describe('SaladChooserComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SaladChooserComponent ]
+      imports: [ FormsModule, ReactiveFormsModule, RouterTestingModule ],
+      declarations: [ SaladChooserComponent, SaladMakerComponent ]
     })
     .compileComponents();
   }));

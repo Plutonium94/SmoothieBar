@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SmoothieChooserComponent } from './smoothie-chooser.component';
+import { CustomSmoothieMakerComponent } from '../custom-smoothie-maker/custom-smoothie-maker.component';
+
 
 describe('SmoothieChooserComponent', () => {
   let component: SmoothieChooserComponent;
@@ -8,7 +11,8 @@ describe('SmoothieChooserComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SmoothieChooserComponent ]
+      imports: [ FormsModule, ReactiveFormsModule ],
+      declarations: [ SmoothieChooserComponent, CustomSmoothieMakerComponent ]
     })
     .compileComponents();
   }));

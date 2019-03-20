@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { CustomSmoothieMakerComponent } from './custom-smoothie-maker.component';
 
@@ -8,6 +10,7 @@ describe('CustomSmoothieMakerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [RouterModule, FormsModule, ReactiveFormsModule],
       declarations: [ CustomSmoothieMakerComponent ]
     })
     .compileComponents();
