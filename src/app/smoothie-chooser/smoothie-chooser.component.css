@@ -6,8 +6,17 @@
 }
 
 
+article h4 {
+	cursor: pointer;
+	margin-bottom: 9px;
+}
+
+article {
+	padding: 9px 18px;
+}
 
 :host {
 	padding: 15px 30px;
 	font-family: Cambria;
 }
+

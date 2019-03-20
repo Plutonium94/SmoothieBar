@@ -1,0 +1,17 @@
+
+
+
+
+form {
+	padding: 25px 40px;
+}
+
+
+select, button {
+	font-size: 18px;
+	margin-bottom: 14px;
+}
+
+button, select {
+	padding: 4px 4px;
+}

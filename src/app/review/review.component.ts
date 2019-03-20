@@ -11,8 +11,8 @@ import { Review } from '../review';
 })
 export class ReviewComponent implements OnInit {
 
-	name: FormControl = new FormControl('');
-	email :FormControl = new FormControl('');
+	name: FormControl = new FormControl('', Validators.required);
+	email :FormControl = new FormControl('', [Validators.required, Validators.email]);
 	comment :FormControl = new FormControl('',Validators.required);
 
 	reviews : Review[] = [];
@@ -29,7 +29,11 @@ export class ReviewComponent implements OnInit {
 	}
 
 	onCommentSubmit() {
-		this.reviews.push({comment: this.comment.value, author: this.name.value});
+		if(this.name.valid && this.email.valid && this.comment.valid) {
+			this.reviews.push({comment: this.comment.value, author: this.name.value});
+		} else {
+			console.warn('oh no review form not valid');
+		}
 	}
 
 }
