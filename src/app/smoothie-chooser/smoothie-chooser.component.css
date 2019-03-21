@@ -25,6 +25,14 @@ article {
 	padding: 9px 18px;
 }
 
+#own {
+	background-color: firebrick;
+	padding: 5px;
+	color:white;
+	display: inline-block;
+
+}
+
 :host {
 	padding: 15px 30px;
 	font-family: Cambria;

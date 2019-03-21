@@ -1,17 +1,18 @@
 <form action="#" (ngSubmit)="onSubmit()">
 
-	<select [formControl]="chosenSalad" required>
-		<option *ngFor="let s of predefinedSalads" >{{s.name}}</option>
+	<label for="predefinedSalads">Choose a salad</label><br>
+	<select id="predefinedSalads" [formControl]="chosenSalad" required>
+		<option *ngFor="let s of predefinedSalads" [value]="s.name">{{s.name}}</option>
 	</select>
 
 	<br>
 
-	<button type="button" (click)="makeOwn()">Make your own salad</button>
+	<button type="submit">Add to Cart</button>
 
 	<br>
+	<button type="button" (click)="makeOwn()">Or make your own salad</button>
 
 
-	<button type="submit">Add to Cart</button>
 
 	<app-salad-maker *ngIf="saladMakerVisible"></app-salad-maker>
 
