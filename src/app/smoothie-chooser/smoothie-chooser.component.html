@@ -2,7 +2,10 @@
 
 <article>
 
-	<h4 *ngFor="let s of smoothies" (click)="addToPanier(s)">{{s.name}} {{s.price}}</h4>
+	<h4 *ngFor="let s of smoothies" (click)="addToPanier(s)">
+		<span class="smoothie-name">{{s.name}}</span>&nbsp;
+		<span class="smoothie-price">{{s.price | currency: 'USD'}}</span>
+	</h4>
 
 	<h4 (click)="customSmoothie=true">Make your own Smoothie</h4>
 

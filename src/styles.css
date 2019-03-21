@@ -1,6 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+
+button:active {
+	background-color: yellow;
+}/* You can add global styles to this file, and also import other style files */
 
 * {
 	margin: 0px;
 	padding: 0px;
+}
+
+button {
+	background-color: violet;
+	border:none;
+	border-radius: 24%;
+	padding : 10px 20px;
+	font-size: 20px;
 }

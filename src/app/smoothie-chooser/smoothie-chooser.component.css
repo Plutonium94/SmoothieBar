@@ -5,6 +5,16 @@
 	clip-path: polygon(0 100%, 20% 0, 80% 0, 100% 100%);
 }
 
+article h4 .smoothie-name {
+	font-family: "Lucida Bright", Serif;
+}
+
+article h4 .smoothie-price {
+	margin-left: 40px;
+	font-family: "Georgia", Serif;
+	font-variant: italic;
+}
+
 
 article h4 {
 	cursor: pointer;
