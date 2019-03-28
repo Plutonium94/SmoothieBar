@@ -28,7 +28,8 @@ export class ReviewComponent implements OnInit {
 	ngOnInit() {
 	}
 
-	onCommentSubmit() {
+
+	onCommentSubmit()  {
 		if(this.name.valid && this.email.valid && this.comment.valid) {
 			this.reviews.unshift({comment: this.comment.value, author: this.name.value});
 		} else {
